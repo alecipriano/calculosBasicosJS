@@ -15,6 +15,7 @@ let clienteGeovana = 0;
 let clientePaty = 0;
 let clienteMel = 0;
 
+
 totMao = qtdadeMao * unhaMao;
 totPe = qtdadePe * unhaPe;
 totMaoPe = totMao + totPe;
@@ -22,7 +23,7 @@ toReceber = totMaoPe - ((totMaoPe / 100)*desconto) - adiantamento;
 clienteGeovana = 3 * unhaMao;
 clientePaty = (4 * unhaMao) + (2 * unhaPe);
 clienteMel =  (5 * unhaMao) + (4 * unhaPe);
-meta = toReceber > salarioMeta ? "Alcançou a Meta Salarial.":"Necessário trabalhar mais um pouco.";
+meta = toReceber > salarioMeta ? "Alcançou a Meta Salarial.":"Necessário trabalhar mais um pouco para alcançar a meta.";
 
 console.log("");
 console.log("Total mão é R$ " + totMao.toFixed(2));
